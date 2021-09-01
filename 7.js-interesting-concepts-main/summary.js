@@ -24,6 +24,8 @@ const num3 = 7;
 // triple(num1, num2, num3);
 const myObj = { name: 'kuddus', age: 17 };
 triple(myObj);
-console.log(myObj);
+// console.log(myObj);
 // console.log(num1, num2, num3);
 // console.log(typeof null);
+
+

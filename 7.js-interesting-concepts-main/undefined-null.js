@@ -47,3 +47,4 @@ const seventh = undefined;
 // console.log(seventh);
 
 const myObj = { name: 'samad', profession: null }
+
