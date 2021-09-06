@@ -30,7 +30,7 @@ searchBtn.addEventListener("click", function () {
       searchInput.value === "";
     });
 });
-
+  
 function showData(countryArray) {
   // Error Handing
   if (countryArray.message === "Not Found") {
