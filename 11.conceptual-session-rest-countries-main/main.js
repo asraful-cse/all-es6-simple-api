@@ -68,25 +68,25 @@ function showData(countryArray) {
         <button onclick="showDetails('${item.alpha3Code}')" class="btn btn-dark">Learn More</button>
       </div>
       `;
-    countryContainer.appendChild(div);
+      countryContainer.appendChild(div);
   });
 }
-function showDetails(alpha3Code) {
-  fetch(`https://restcountries.eu/rest/v2/alpha/${alpha3Code}`)
-    .then((res) => res.json())
-    .then((data) => {
-      // data -> OBJECT
-      // data.currencies -> Array
-      // data.currencies[0] -> Object
-      // data.currencies[0].name
-      console.log(data.currencies[0].name);
-      countryDetails.innerHTML = `
-        <div class="col-md-12">
-            <h1>${data.name}</h1>
-            <p>Capital: ${data.capital}</p>
-            <p>Currency Name: ${data.currencies[0].name}</p>
-            <p>Currency Symbol: ${data.currencies[0].symbol}</p>
-        </div>
-      `;
-    });
-}
+// function showDetails(alpha3Code) {
+//   fetch(`https://restcountries.eu/rest/v2/alpha/${alpha3Code}`)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       // data -> OBJECT
+//       // data.currencies -> Array
+//       // data.currencies[0] -> Object
+//       // data.currencies[0].name
+//       console.log(data.currencies[0].name);
+//       countryDetails.innerHTML = `
+//         <div class="col-md-12">
+//             <h1>${data.name}</h1>
+//             <p>Capital: ${data.capital}</p>
+//             <p>Currency Name: ${data.currencies[0].name}</p>
+//             <p>Currency Symbol: ${data.currencies[0].symbol}</p>
+//         </div>
+//       `;
+//     });
+// }
